@@ -1,0 +1,12 @@
+a {
+  text-decoration: none;
+}
+.header{
+    margin-bottom: 20px;
+}
+.header a{
+    margin-right: 20px;
+}
+.header button{
+  margin-left: 20px;
+}
