@@ -7,19 +7,22 @@ import Services from "./componets/Services/Services";
 import Contact from "./componets/Contact/Contact";
 import Login from "./componets/Login/Login";
 import Register from "./componets/Register/Register";
-import './App.css'
+import "./App.css";
+import AuthProvider from "./Context/AuthProvider";
 const App = () => {
   return (
     <>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-      </Routes>
+      <AuthProvider>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+        </Routes>
+      </AuthProvider>
     </>
   );
 };
