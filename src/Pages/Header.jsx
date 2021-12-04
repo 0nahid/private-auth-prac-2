@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import useFirebase from "../hooks/useFirebase";
 import "./Header.css";
-import useFirebase from "./../../hooks/useFirebase";
 const Header = () => {
   const { user, logout } = useFirebase();
   return (

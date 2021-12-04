@@ -1,14 +1,14 @@
 import React from "react";
 import { Route, Routes } from "react-router";
-import About from "./componets/About/About";
-import Header from "./componets/Header/Header";
-import Home from "./componets/Home/Home";
-import Services from "./componets/Services/Services";
-import Contact from "./componets/Contact/Contact";
-import Login from "./componets/Login/Login";
-import Register from "./componets/Register/Register";
 import "./App.css";
-import AuthProvider from "./Context/AuthProvider";
+import AuthProvider from "./Components/Context/AuthProvider";
+import About from "./Pages/About";
+import Contact from "./Pages/Contact";
+import Header from "./Pages/Header";
+import Home from "./Pages/Home";
+import Login from "./Pages/Login";
+import Register from "./Pages/Register";
+import Services from "./Pages/Services";
 const App = () => {
   return (
     <>
